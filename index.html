@@ -26,11 +26,14 @@
         }
 
         .title h1 {
-            margin: 15px 0;
+            margin: 5px 0;
             animation: sparkle 2s infinite;
             background: linear-gradient(90deg, #ff9a9e, #f450a2, #f1268f);
             background-size: 400% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+
         @keyframes sparkle {
             0%, 100% {
                 background-position: 0% 50%;
