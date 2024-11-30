@@ -1,0 +1,91 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            text-align: center;
+            background-color: #4caf50;
+            color: white;
+            padding: 20px 0;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .experience {
+            width: 50%;
+            margin: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .experience:hover {
+            transform: scale(1.05);
+        }
+
+        .experience img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .experience h2 {
+            font-size: 1.5em;
+            margin: 15px;
+        }
+
+        .experience p {
+            font-size: 1em;
+            margin: 15px;
+            color: #555;
+        }
+        .image-gallery {
+        display: flex;
+         gap: 10px;
+        }
+
+        .image-gallery img {
+        width: 32%; /* Mỗi ảnh chiếm 32% không gian */
+        height: auto; /* Giữ nguyên tỉ lệ ảnh */
+        object-fit: cover; /* Cắt ảnh cho phù hợp nếu cần */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .experience {
+                width: 100%; /* Full width for small screens */
+                margin: 10px 0;
+            }
+
+            .image-gallery img {
+                width: 100%; /* Full width images for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em; /* Smaller font size for small screens */
+            }
+
+            .experience h2 {
+                font-size: 1.2em; /* Adjust heading size */
+            }
+        }

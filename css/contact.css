@@ -1,0 +1,139 @@
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.contact-section {
+    opacity: 0; /* Ẩn phần tử */
+    animation: fadeIn 1s forwards; /* Áp dụng hiệu ứng fadeIn */
+    max-width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    background-image: url('../images/imgcontact/hinh-anh-du-lich-ha-long.jpg'); /* Thêm hình nền */
+    background-size: cover; /* Làm cho hình nền phủ đầy khung */
+    background-position: center center; /* Canh giữa hình nền */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #fff; /* Đổi màu chữ thành trắng để dễ đọc trên nền tối */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa các phần tử bên trong */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.contact-section h2 {
+    font-size: 1.5em; /* Giảm kích thước tiêu đề */
+    text-align: center;
+    color: #f3f8f4;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Giảm khoảng cách giữa các mục */
+    font-size: 1.5em; /* Giảm kích thước font */
+    color: #333;
+    width: 50%; /* Đảm bảo các mục thông tin chiếm toàn bộ chiều rộng */
+    text-align: center; /* Căn giữa các mục thông tin */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Giảm khoảng cách giữa biểu tượng và văn bản */
+    background-color: rgba(244, 244, 244, 0.7); /* Màu nền nhẹ cho các mục */
+    padding: 8px 12px; /* Giảm padding để khung nhỏ lại */
+    border-radius: 5px;
+    font-size: 0.9em; /* Giảm kích thước font cho văn bản */
+}
+
+.contact-item p {
+    font-size: 1.1em; /* Điều chỉnh kích thước của biểu tượng */
+    margin: 0; /* Loại bỏ khoảng cách xung quanh biểu tượng */
+}
+
+.contact-item img {
+    width: 20px; /* Giảm kích thước biểu tượng */
+    height: 20px;
+}
+
+.contact-item span {
+    font-size: 1em; /* Giảm kích thước văn bản */
+    font-weight: 500;
+}
+
+.contact-form {
+    margin-top: 20px;
+    width: 50%;
+    transform: translateY(30px); /* Đặt form xuống dưới */
+    opacity: 0; /* Ẩn form */
+    animation: slideUp 0.5s forwards; /* Hiệu ứng di chuyển và xuất hiện */
+  
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px ;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgba(244, 244, 244, 0.7); /* Màu nền nhẹ cho các mục */
+   
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+@media (max-width: 768px) {
+            .experience {
+                width: 100%; /* Full width for small screens */
+                margin: 10px 0;
+            }
+
+            .image-gallery img {
+                width: 100%; /* Full width images for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em; /* Smaller font size for small screens */
+            }
+
+            .experience h2 {
+                font-size: 1.2em; /* Adjust heading size */
+            }
+        }

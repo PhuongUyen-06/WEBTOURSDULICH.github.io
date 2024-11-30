@@ -1,0 +1,77 @@
+
+        /* CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: url('../images/imgabout/baibien.jpg') no-repeat center center fixed; /* Chèn hình nền */
+            background-size: cover; /* Tự động điều chỉnh kích thước hình nền */
+        }
+        #about {
+    background: rgba(255, 255, 255, 0.8); /* Nền trắng mờ */
+    padding: 20px; /* Tạo khoảng cách bên trong */
+    border-radius: 10px; /* Góc bo tròn */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo đổ bóng nhẹ */
+    max-width: 800px; /* Giới hạn chiều rộng */
+    margin: 20px auto; /* Căn giữa phần tử */
+}
+
+#about h2 {
+    font-size: 36px; /* Kích thước chữ */
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #333; /* Màu chữ đậm vừa */
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+#about p {
+    font-size: 16px; /* Kích thước chữ */
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+    color: #333; /* Màu chữ đậm vừa */
+    font-family: 'Arial', sans-serif;
+}
+
+#about .highlight {
+    color: #007BFF; /* Màu chữ nổi bật */
+    font-weight: bold;
+}
+
+#about #learnMore {
+    display: block; /* Để nút nằm riêng một dòng */
+    margin: 20px auto 0; /* Căn giữa nút và tạo khoảng cách */
+    padding: 10px 20px;
+    background: #007BFF; /* Màu nền nút */
+    color: #fff; /* Màu chữ */
+    border: none;
+    border-radius: 5px; /* Góc bo tròn nút */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Hiệu ứng hover mượt */
+}
+
+#about #learnMore:hover {
+    background: #0056b3; /* Đổi màu khi hover */
+}
+@media (max-width: 768px) {
+            .experience {
+                width: 100%; /* Full width for small screens */
+                margin: 10px 0;
+            }
+
+            .image-gallery img {
+                width: 100%; /* Full width images for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em; /* Smaller font size for small screens */
+            }
+
+            .experience h2 {
+                font-size: 1.2em; /* Adjust heading size */
+            }
+        }
+
+    

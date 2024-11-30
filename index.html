@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB TOURS DU LỊCH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+        }
+
+        .container {
+            text-align: center;
+            color: #333;
+        }
+
+        .title {
+            margin-bottom: 30px;
+        }
+
+        .title h1 {
+            margin: 15px 0;
+            animation: sparkle 2s infinite;
+            background: linear-gradient(90deg, #ff9a9e, #f450a2, #f1268f);
+            background-size: 400% 100%;
+        }
+        @keyframes sparkle {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .link-container {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .link {
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s;
+            animation: sparkle 2s infinite;
+        }
+
+        .link:hover {
+            background-color: #2e86c1;
+        }
+
+        .link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: left 0.4s;
+            z-index: 1;
+        }
+
+        .link:hover::before {
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>WEB TOURS DU LỊCH</h1>
+            <h1>Nhóm WEBGL</h1>
+            <h1>Lớp: SPTIN.B</h1>
+        </div>
+
+        <div class="link-container">
+            <a href="TRANGCHU.html" class="link">TRUY CẬP WEB</a>
+        </div>
+    </div>
+</body>
+</html>
